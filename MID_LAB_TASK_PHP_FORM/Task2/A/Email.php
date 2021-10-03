@@ -1,13 +1,15 @@
-<?php
-	
-	$Email = "";
-	
-	if(isset($_REQUEST['submit'])){
-		
-		$Email = $_REQUEST['Email'];
-        echo $Email;
-		
-	}else{
-		echo " ";
-	}
+<?php 
+
+    
+    
+    if(isset($_REQUEST['submit']))
+    {
+        $email = $_REQUEST['Email'];
+        if($email == ""){
+            echo "Null Value";
+        }else{
+            echo $email;
+        }   
+    }
+    
 ?>

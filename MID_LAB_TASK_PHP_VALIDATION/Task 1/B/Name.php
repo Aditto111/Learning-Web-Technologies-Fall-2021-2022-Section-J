@@ -1,6 +1,6 @@
 <html>
 <head>
-    <meta charset="utf-8">
+    
     <title>Name Field </title>
 </head>
 <body>  

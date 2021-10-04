@@ -1,10 +1,10 @@
 <html>
 <head>
-	<meta charset="utf-8">
+	
 	<title>Name Field </title>
 </head>
 <body>	
-	<form method="get" action="#">
+	<form method="post" action="#">
 		<fieldset>
 			<legend>Date</legend>
 			

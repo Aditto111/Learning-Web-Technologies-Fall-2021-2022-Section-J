@@ -1,14 +1,16 @@
 <?php
-
-	if(isset($_POST['submit'])){
-		$username = $_POST['username'];
-		$password = $_POST['password'];
+    session_start();
+ 
+	if(isset($_REQUEST['submit'])){
+		$username = $_REQUEST['username'];
+		$password = $_REQUEST['password'];
 
 		if($username != ""){
 			if($password != ""){
-				
-				if($username == $password){
-					header('location: home.html');
+			 
+			 if($_SESSION['user']['username'] == $username && $_SESSION['user']['password'] == $password){
+					$_SESSION['flag'] = "true";
+					header('location: Homepage.php');
 				}else{
 					echo "invalid username/password";
 				}

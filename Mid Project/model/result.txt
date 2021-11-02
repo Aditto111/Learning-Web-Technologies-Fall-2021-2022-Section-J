@@ -1,0 +1,5 @@
+103|Shadman|3.6|Regular|90%|1st Semister :40,000|2nd Semister :60,000|3rd Semister :60,000|Done
+102|Shakib|3.68|Irregular|70%|1st Semister :40,000|2nd Semister :60,000|3rd Semister :60,000|Duo
+104|Aditto|3.5|Regular|85%|1st Semister :40,000|2nd Semister :60,000|3rd Semister :60,000|Done
+166|Adi|3.64|Irregular|60%|1st Semister :40,000|2nd Semister :60,000|3rd Semister :60,000|Duo
+109|Test|3.3|Regular|91%|1st Semister :40,000|2nd Semister :60,000|3rd Semister :60,000|Done

@@ -1,0 +1,5 @@
+2203|Aditto|aditto@gmail.com|BBA|11:00am - 1:30pm
+2202|Shadman|shadman@gmail.com|CS|12:00am - 2:30pm
+2204|Shakib|shakib@gmail.com|CS|11:00am - 1:30pm
+2266|Adi|adi@gmail.com|BBA|1:00pm - 3:30pm
+2209|Alamin|alamin@gmail.com|CS|10:00am - 12:30pm

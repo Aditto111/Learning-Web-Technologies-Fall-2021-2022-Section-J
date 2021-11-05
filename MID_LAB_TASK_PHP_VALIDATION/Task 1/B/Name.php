@@ -16,7 +16,7 @@
         $str = $_REQUEST['myname'];
        if (strlen($_POST["myname"])<2)
             {
-              echo " $str-should be 2 or more";
+              echo " $str-atleast 2 or more";
             }
        
        

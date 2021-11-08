@@ -18,7 +18,7 @@
                                'selling'=>$selling
                               ];
 
-                        $status= addProducts($product);
+                        $status= AddProduct($product);
 
                       if($status)
                       {

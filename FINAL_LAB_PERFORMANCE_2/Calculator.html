@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+ 
+</head>
+<body>
+    <div class="screen">
+                <input type="text" id="s" name="screen" readonly/>
+
+            </div>
+            <div class="btn">
+                <input type="button" name="CE" value ="CE" />
+                <input type="button" name="C" value ="C" />
+                <input type="button" name="de" value ="(X)" onclick="deleteButton()" />
+                <input type="button" id="n" name="div" value ="÷" onclick="valueButton(this.value)"/>
+
+            </div>
+            <div class="btn">
+                <input type="button" id="n" name="num7" value ="7" onclick="valueButton(this)"/>
+                <input type="button" id="n" name="num2" value ="8" onclick="valueButton(this)"/>
+                <input type="button" id="n" name="num3" value ="9" onclick="valueButton(this)"/>
+                <input type="button" id="n" name="mul" value ="*" onclick="valueButton(this)"/>
+
+            </div>
+            <div class="btn">
+                <input type="button" id="n" name="num4" value ="4"onclick="valueButton(this)"/>
+                <input type="button" id="n" name="num5" value ="5" onclick="valueButton(this)"/>
+                <input type="button" id="n" name="num6" value ="6" onclick="valueButton(this)"/>
+                <input type="button" id="n" name="sub" value ="-" onclick="valueButton(this)"/>
+
+            </div>
+            <div class="btn">
+                <input type="button" id="n" name="num1" value ="1" onclick="valueButton(this)"/>
+                <input type="button" id="n" name="num2" value ="2" onclick="valueButton(this)"/>
+                <input type="button"id="n" name="num3" value ="3" onclick="valueButton(this)"/>
+                <input type="button" id="n" name="plus" value ="+" onclick="valueButton(this)"/>
+
+            </div>
+            <div class="btn">
+                <input type="button" id="n" name="plus/sub" value ="+/-" onclick="valueButton(this)"/>
+                <input type="button" id="n" name="num0" value ="0" onclick="valueButton(this)"/>
+                <input type="button" id="n" name="dot" value ="." onclick="valueButton(this)"/>
+                <input type="button" id="n" name="equal " value ="=" onclick="Calculate()"/>
+
+            </div>
+
+
+         
+       </form>
+   </div>
+
+
+ 
+   
+   
+</body>
+</html>

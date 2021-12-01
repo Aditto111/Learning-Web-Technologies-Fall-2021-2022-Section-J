@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
 	if ($username != "") {
 		if ($password != "") {
 			if ($usertype != "") {
-				$myfile = fopen('../model/user.txt', 'r');
+				$myfile = fopen('../../model/Parents/user.txt', 'r');
 
 				while (!feof($myfile)) {
 					$data = fgets($myfile);

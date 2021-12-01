@@ -13,14 +13,14 @@ if (isset($_POST['submit'])) {
 			if ($email != "") {
 				if ($refertype != "") {
 
-					$myfile = fopen("refer_../model/student.txt", "a");
+					$myfile = fopen("refer_../../model/Parents/student.txt", "a");
 					$user = $uname . "|" . $phone . "|" . $email . "|" . $refertype . "|" . "Student" . "\r\n";
 					
 					fwrite($myfile, $user);
 
 					fclose($myfile);
 
-					header('location: ../views/home.php');
+					header('location: ../../views/Parents/home.php');
 				} else {
 					echo "Invalid refertype...";
 				}

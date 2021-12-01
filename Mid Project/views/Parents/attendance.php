@@ -24,7 +24,7 @@
             </tr>
 
             <?php
-            $myfile2 = fopen('../model/result.txt', 'r');
+            $myfile2 = fopen('../../model/Parents/result.txt', 'r');
 
 
             while (!feof($myfile2)) {

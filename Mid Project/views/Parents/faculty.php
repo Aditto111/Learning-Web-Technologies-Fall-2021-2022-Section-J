@@ -10,23 +10,23 @@
 
     <center>
         <a href="home.php">Back </a> |
-        <a href="../controller/logout.php">logout </a>
+        <a href="../../controller/Parents/logout.php">logout </a>
 
 
         <br>
-        <h1>Show Student Payment Information </h1>
+        <h1>Show All Faculty Information List</h1>
         <table border="1" align="center">
             <tr>
-                <th>STUDENT ID</th>
+                <th>FACULTY ID</th>
                 <th>NAME</th>
-                <th>1ST SEMISTER</th>
-                <th>2ND SEMISTER</th>
-                <th>3RD SEMISTER</th>
-                <th>PAYMENT STATUS</th>
+                <th>EMAIL</th>
+                <th>DEPARTMENT</th>
+                <th>CONSULTING TIME</th>
             </tr>
 
             <?php
-            $myfile2 = fopen('../model/result.txt', 'r');
+
+            $myfile2 = fopen('../../model/Parents/faculty.txt', 'r');
 
 
             while (!feof($myfile2)) {
@@ -37,10 +37,9 @@
                     echo '<tr>
 						    <td>' . $user[0] . '</td>
 						    <td>' . $user[1] . '</td>
-						    <td>' . $user[5] . '</td>
-                            <td>' . $user[6] . '</td>
-                            <td>' . $user[7] . '</td>
-                              <td>' . $user[8] . '</td>
+						    <td>' . $user[2] . '</td>
+                            <td>' . $user[3] . '</td>
+                            <td>' . $user[4] . '</td>
 					     </tr>';
                 }
             }

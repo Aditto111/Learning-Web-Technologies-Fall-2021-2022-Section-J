@@ -6,8 +6,8 @@
 
 
         $editId = $_POST["editId"];
-        $fileName = "../model/student.txt";
-        $readData = file("../model/student.txt", FILE_IGNORE_NEW_LINES);
+        $fileName = "../../model/Parents/student.txt";
+        $readData = file("../../model/Parents/student.txt", FILE_IGNORE_NEW_LINES);
 
 
         list($username, $password, $email, $usertype) = array_pad(explode("|", $readData[$editId], 4), 4, null);
@@ -26,7 +26,7 @@
  <body>
      <center>
          <a href="home.php">Back </a> |
-         <a href="../controller/logout.php">logout </a>
+         <a href="../../controller/Parents/logout.php">logout </a>
      </center>
      <center>
          <form action="userlist.php" method="post" name="recordForm" id="recordForm">

@@ -13,19 +13,19 @@ if (isset($_POST['submit'])) {
 			if ($email != "") {
 				if ($type != "") {
 
-					$des = "../img/" . $_FILES['myfile']['name'];
+					$des = "../../Parents/img/" . $_FILES['myfile']['name'];
 					$src = $_FILES['myfile']['tmp_name'];
 
 					if (move_uploaded_file($src, $des)) {
 
-						$dbfile = fopen("../model/user.txt", "a");
+						$dbfile = fopen("../../model/Parents/user.txt", "a");
 						$user = $uname . "|" . $pass . "|" . $email . "|" . $type . "|" . $des . "\r\n";
 						
 						fwrite($dbfile, $user);
 
 						fclose($dbfile);
 
-						header('location: ../views/login.html');
+						header('location: ../views/Parents/login.html');
 					} else {
 						echo "please insert a profile picture";
 					}

@@ -18,14 +18,14 @@ if (!empty($_POST["action"])) $action = $_POST["action"];
 <body>
     <center>
         <a href="home.php">Back </a> |
-        <a href="../controller/logout.php">logout </a>
+        <a href="../../controller/Parents/logout.php">logout </a>
     </center>
     <?php
 
 
     if ($action == "delete") {
         $deleteId = $_POST['deleteId'];
-        $rData = file("../model/student.txt", FILE_IGNORE_NEW_LINES);
+        $rData = file("../../model/Parents/student.txt", FILE_IGNORE_NEW_LINES);
         $arrOut = array();
 
         foreach ($rData as $key => $val) {
@@ -33,7 +33,7 @@ if (!empty($_POST["action"])) $action = $_POST["action"];
         }
 
         $sArray = implode("\n", $arrOut);
-        $db = fopen('../model/student.txt', 'w');
+        $db = fopen('../../model/Parents/student.txt', 'w');
         if (count($rData) < 0) {
             fwrite($db, $sArray . "\r\n");
         } else
@@ -41,17 +41,17 @@ if (!empty($_POST["action"])) $action = $_POST["action"];
         fclose($db);
     } else if ($action == "edit") {
         $editId = $_POST["editId"];
-        $rData = file("../model/student.txt", FILE_IGNORE_NEW_LINES);
+        $rData = file("../../model/Parents/student.txt", FILE_IGNORE_NEW_LINES);
         $rData[$editId] = ($username . "|" . $password . "|" . $email . "|" . $usertype);
         $writeData = implode("\r\n", $rData);
-        $fileWrite = fopen('../model/student.txt', 'w+');
+        $fileWrite = fopen('../../model/Parents/student.txt', 'w+');
         fwrite($fileWrite, $writeData . "\r\n");
         fclose($fileWrite);
     }
 
 
-    $fileName = "../model/student.txt";
-    $rData = file("../model/student.txt", FILE_IGNORE_NEW_LINES);
+    $fileName = "../../model/Parents/student.txt";
+    $rData = file("../../model/Parents/student.txt", FILE_IGNORE_NEW_LINES);
     ?>
     <center>
         <h1>See All Student List</h1>

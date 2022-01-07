@@ -35,7 +35,7 @@ require_once('header.php');
 				<td colspan=" 2" align="right">
 					<a href="home.php">Home</a> |
 					<a href="create.php"> Refer Student</a> |
-					<a href="../controller/logout.php"> logout</a>
+					<a href="../../controller/Parents/logout.php"> logout</a>
 				</td>
 			</tr>
 			<tr height="250px">

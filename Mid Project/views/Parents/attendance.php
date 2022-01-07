@@ -10,7 +10,7 @@
 
     <center>
         <a href="home.php">Back </a> |
-        <a href="../controller/logout.php">logout </a>
+        <a href="../../controller/Parents/logout.php">logout </a>
 
 
         <br>

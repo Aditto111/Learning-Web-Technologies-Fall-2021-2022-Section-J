@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 					if (trim($user[0]) == $username && trim($user[1]) == $password && trim($user[3]) == $usertype) {
 						$_SESSION['profile_pic'] = $user[4];
 						setcookie('flag', 'true', time() + 3600, '/');
-						header('location: ../views/home.php');
+						header('location: ../../views/Parents/home.php');
 					}
 				}
 				echo "invalid username/password";
